@@ -1,0 +1,183 @@
+/*HEIGHT html and body*/
+html body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+/*HEADER*/
+.container{
+    width: 917px;
+    margin: 0 auto;
+}
+.bg{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.page-header{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../imgages/autor.jpg");
+    background-size: cover;
+    background-position: top;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 128px;
+    height: 88px;
+    margin-left: 141px;
+    color: white;
+}
+.logo img{
+    margin-right: 10px;
+}
+
+.logo, nav{
+    flex-grow: 1;
+}
+.page-header nav ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /*padding: 10px 40px;*/
+    height: 88px;
+}
+.page-header nav{
+    display: flex;
+    justify-content: center;
+    /*width: 128px;*/
+    height: 88px;
+    }
+.page-header li{
+    padding: 10px 20px;
+    line-height: 70px;
+
+}
+.page-header span{
+    color: red;
+}
+.page-header li > a{
+    text-decoration: none;
+    color: white;
+    cursor: default;
+}
+.bg p{
+    font-family: ;
+    font-size: 40px;
+    position: relative;
+    z-index: 1;
+}
+.page-header li:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-header::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.baner{
+    position: relative;
+    color: white;
+    text-align: center;
+
+
+}
+.control{
+    height: 118px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.baner h1 {
+    font-family: 'Nunito-sans';
+    position: relative;
+    z-index: 1;
+    font-weight: 900;
+    font-size: 90px;
+    margin-top: 180px;
+    padding: 20px 0;
+}
+.baner p {
+    font-family: Nunito-sans;
+    position: relative;
+    z-index: 1;
+
+}
+.btn{
+    border-radius: 40px;
+    text-decoration: none;
+    font-family: Nunito-sans, bold;
+    font-size: 1rem;
+    padding: 23px 54px;
+    position: relative;
+    z-index: 1;
+
+}
+.btn-primary{
+    color: white;
+    background-color: #ff0000;
+    box-shadow: 0px 3px 6px #FF00004D;
+    margin-right: 12.5px;
+
+
+}
+.btn-secondary{
+    color: red;
+    background-color: #ffffff;
+    margin-left: 12.5px;
+}
+.arrow{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+    bottom: -25px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*END HEADER*/
+
+/*SECTION*/
+section{
+    margin: 100px 0;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+
+}
+.title::before{
+    content: "";
+    height: 3px;
+    width: 55px;
+    background-color: red;
+    margin-right: 10px;
+}
+.title::after{
+    content:'';
+    height: 3px;
+    width: 55px;
+    background-color: red;
+    margin-left: 10px;
+}
