@@ -4,6 +4,7 @@ html body{
     width: 100%;
     position: relative;
 }
+
 /*HEADER*/
 .container{
     width: 917px;
@@ -46,13 +47,11 @@ html body{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /*padding: 10px 40px;*/
     height: 88px;
 }
 .page-header nav{
     display: flex;
     justify-content: center;
-    /*width: 128px;*/
     height: 88px;
     }
 .page-header li{
@@ -69,7 +68,7 @@ html body{
     cursor: default;
 }
 .bg p{
-    font-family: ;
+    font-family:'Nunito Sans',sans-serif;
     font-size: 40px;
     position: relative;
     z-index: 1;
@@ -120,7 +119,7 @@ html body{
 .btn{
     border-radius: 40px;
     text-decoration: none;
-    font-family: Nunito-sans, bold;
+    font-family: 'Nunito-sans', bold;
     font-size: 1rem;
     padding: 23px 54px;
     position: relative;
@@ -156,16 +155,24 @@ html body{
 }
 /*END HEADER*/
 
-/*SECTION*/
+/*SECTION ONE*/
 section{
-    margin: 100px 0;
+    display: flex;
+    justify-content: space-around;
+    width: 1088px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0px);
+
 }
 .title{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
     font-size: 35px;
-
+    margin: 100px 0;
 }
 .title::before{
     content: "";
@@ -181,3 +188,39 @@ section{
     background-color: red;
     margin-left: 10px;
 }
+.column{
+    width: 352px;
+    display: inline-block;
+}
+.blog > h4 {
+    font-family:'Nunito-sans', regular;
+    font-size: 19px;
+    padding: 7px 0;
+    color: #6A6A6A;
+}
+.blog > p {
+    font-family:'Open Sans', light;
+    font-size: 14px;
+    padding: 7px 0;
+    color: #6A6A6A;
+    display: inline-block;
+    margin-right: 92px;
+}
+.section-btn{
+    width: 142px;
+    height: 40px;
+    background-color: red;
+    border-radius: 40px;
+    box-shadow: 0px 3px 6px #FF00004D;
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+}
+.button{
+    text-decoration: none;
+    padding: 11px 29px;
+    font-family: 'Nunito-sans', Bold;
+    font-size: 14px;
+    color: white;
+}
+/*END SECTION ONE*/
